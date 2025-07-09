@@ -1,0 +1,12 @@
+<div class="container my-4">
+  <button class="btn btn-secondary mb-3" (click)="back()">← Back</button>
+  <h2>User Details</h2>
+  <table class="table table-bordered mt-3">
+    <tbody>
+      <tr *ngFor="let key of headers">
+        <th class="w-25">{{ key }}</th>
+        <td>{{ user[key] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
